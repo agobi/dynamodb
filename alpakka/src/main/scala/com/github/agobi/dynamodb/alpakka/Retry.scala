@@ -36,7 +36,7 @@ class Retry[IN, OUT](bufferSize: Int) extends GraphStageWithMaterializedValue[Bi
 
   override def createLogicAndMaterializedValue(inheritedAttributes: Attributes): (GraphStageLogic, () => Future[Counters]) = {
     val logic = new Logic
-    (logic, logic.counters)
+    (logic, () => logic.counters())
   }
 
   private class Logic extends TimerGraphStageLogicWithLogging(shape) {
