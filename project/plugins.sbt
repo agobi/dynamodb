@@ -1,1 +1,1 @@
-addSbtPlugin("com.localytics" % "sbt-dynamodb" % "1.5.5")
+addSbtPlugin("com.localytics" % "sbt-dynamodb" % "2.0.3")

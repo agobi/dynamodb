@@ -1,7 +1,7 @@
 organization in ThisBuild := "com.github.agobi"
 scalacOptions in ThisBuild ++= Seq("-Xfatal-warnings","-Xlint","-deprecation","-feature","-unchecked")
-scalaVersion in ThisBuild := "2.11.11"
-crossScalaVersions in ThisBuild := Seq("2.12.4")
+scalaVersion in ThisBuild := "2.11.12"
+crossScalaVersions in ThisBuild := Seq("2.12.10")
 
 lazy val `alpakka-dynamodb` = project.in(file("alpakka"))
   .settings(
